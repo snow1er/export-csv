@@ -13,8 +13,9 @@ import javax.ws.rs.core.UriInfo;
  * @author Neo.Li
  */
 public class QueryParameter implements Serializable {
-	private static final long serialVersionUID = 77255562682860301L;
 	
+	private static final long serialVersionUID = -4045772600825019526L;
+
 	/**
 	 * Index of page
 	 */

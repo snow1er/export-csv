@@ -54,7 +54,7 @@ public class ArraySqlTypeDescriptor implements SqlTypeDescriptor {
 	}
 
 	@Override
-	public <X> ValueExtractor<X> getExtractor(JavaTypeDescriptor<X> javaTypeDescriptor) {
+	public <X> ValueExtractor<X> getExtractor(final JavaTypeDescriptor<X> javaTypeDescriptor) {
 		return new BasicExtractor<X>(javaTypeDescriptor, this) {
 
 			@Override

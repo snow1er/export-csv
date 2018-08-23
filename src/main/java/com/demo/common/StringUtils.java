@@ -2,16 +2,12 @@ package com.demo.common;
 
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
 
-
-
 /**
- * String utility
- * @author Depeng.Liu
- *
+ * Provide common API for String
+ * @author Neo.Li
  */
 public class StringUtils {
 
@@ -52,26 +48,6 @@ public class StringUtils {
 	 */
 	public static boolean isNotUUID(String str) {
 		return isEmpty(str) || !isUUID(str);
-	}
-	
-	public static List<String> filterList(List<String> list){
-		if(list==null||list.isEmpty())
-			return list;
-		else {
-			return list.stream().filter(str->isNotEmpty(str)).distinct().sorted().collect(Collectors.toList());
-		}
-	}
-	
-	public static String getWildQueryStr(String value){
-		String queryStr = value.toLowerCase();
-		if(!queryStr.startsWith("*")){
-			queryStr = "*" + queryStr;
-		}
-		if(!queryStr.endsWith("*")){
-			queryStr = queryStr + "*";
-		}
-		
-		return queryStr;
 	}
 	
 	/**

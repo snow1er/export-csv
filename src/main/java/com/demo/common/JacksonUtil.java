@@ -11,7 +11,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.type.TypeFactory;
 
 /**
- * Json utility
+ * Provide common API for JSON
  * @author Neo.Li
  */
 public class JacksonUtil {
